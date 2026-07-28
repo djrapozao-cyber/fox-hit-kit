@@ -152,13 +152,13 @@ function initMarquee() {
 const PREVIEW_TRACKS = [
   {
     id: 'track-1',
-    name: 'ALUCINANTE',
-    genre: 'FUNK SP',
-    artist: 'Mc Hariel Style',
-    bpm: 121,
-    key: 'A# min',
-    icon: '⚡',
-    synthType: 'funk_sp',
+    name: 'ECLIPSE',
+    genre: 'TRAP RAGE',
+    artist: 'Playboi Carti x Lil Uzi Vert',
+    bpm: 162,
+    key: 'A min',
+    icon: '🌑',
+    synthType: 'rage',
     audioUrl: 'audio/track1.mp3',
     startTime: 0
   },
