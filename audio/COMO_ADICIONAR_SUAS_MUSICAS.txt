@@ -1,0 +1,34 @@
+========================================================================
+COMO ADICIONAR SUAS PRÓPRIAS FAIXAS E ESCOLHER O MOMENTO EXATO DO BEAT (START TIME)
+========================================================================
+
+1. ADICIONAR SEUS ARQUIVOS DE ÁUDIO:
+Copie seus 5 arquivos de áudio para a pasta "audio":
+c:\Users\erick\Downloads\FOX HIT KI SITE\audio\
+
+Renomeie para:
+  - track1.mp3 (ou track1.wav)
+  - track2.mp3 (ou track2.wav)
+  - track3.mp3 (ou track3.wav)
+  - track4.mp3 (ou track4.wav)
+  - track5.mp3 (ou track5.wav)
+
+------------------------------------------------------------------------
+2. ESCOLHER O SEGUNDO/MOMENTO EXATO EM QUE A PRÉVIA COMEÇA NO BEAT:
+------------------------------------------------------------------------
+Você pode escolher exatamente em qual segundo da música o player vai começar a tocar (por exemplo, no Drop do Funk aos 30 segundos, ou no Refrão aos 45 segundos)!
+
+Como configurar:
+1. Abra o arquivo "app.js" no bloco de notas ou editor de código.
+2. Procure pela lista PREVIEW_TRACKS no topo do arquivo.
+3. Altere o valor de "startTime" com o segundo em que deseja começar:
+
+   Exemplo:
+   {
+     name: 'MOTOR POTENTE',
+     ...
+     audioUrl: 'audio/track2.mp3',
+     startTime: 30  // <--- COMEÇA AOS 30 SEGUNDOS (No Drop do Funk!)
+   }
+
+O player tocará automaticamente uma prévia perfeita de 30 segundos a partir do segundo que você escolheu, e fará o loop contínuo!

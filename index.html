@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOX HIT KIT - Beats Vol.1 | 30 Beats Profissionais Royalty Free</title>
+  <meta name="description" content="Coleção definitiva de 30 beats profissionais royalty free para MCs, Trappers e Produtores. Funk BH, Funk SP, Trap, Drill, Boom Bap e Detroit de altíssimo nível.">
+  
+  <!-- Remix Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Correção automática para acesso à subpasta na Vercel sem barra final
+    (function() {
+      var p = window.location.pathname;
+      if (p.length > 1 && !p.endsWith('/') && !p.split('/').pop().includes('.')) {
+        window.location.replace(window.location.href + '/');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Particle Canvas & Mouse Spotlight -->
+  <canvas id="particle-canvas"></canvas>
+  <div id="mouse-spotlight" class="mouse-spotlight"></div>
+  
+  <!-- Scroll Progress Indicator Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/fox-logo.png" onerror="this.onerror=null; if(!this.src.includes('FOX')) this.src='/FOX%20HIT%20KI%20SITE/'+this.getAttribute('src');" alt="FOX HIT KIT Logo" class="brand-fox-logo">
+        <span class="brand-text">FOX HIT KIT</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#previa" class="nav-link">▶ Prévia dos Beats</a></li>
+        <li><a href="#conteudo" class="nav-link">O que vem dentro</a></li>
+        <li><a href="#beneficios" class="nav-link">Por que escolher</a></li>
+        <li><a href="#bonuses" class="nav-link">Bônus</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#beat-exclusivo" class="nav-link">Beat Exclusivo</a></li>
+      </ul>
+
+      <div class="nav-social-icons">
+        <a href="https://wa.me/5533999829360" class="nav-social-btn nav-whatsapp" target="_blank" rel="noopener noreferrer" title="WhatsApp: (33) 99982-9360">
+          <i class="ri-whatsapp-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/djrapozao_ofc_/" class="nav-social-btn nav-instagram" target="_blank" rel="noopener noreferrer" title="Instagram: @djrapozao_ofc_">
+          <i class="ri-instagram-fill"></i>
+        </a>
+      </div>
+
+      <a href="https://pay.kiwify.com.br/KqkKRRb" class="nav-cta" target="_blank" rel="noopener noreferrer">
+        🔥 QUERO MEU KIT NOW
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <div class="hero-live-badge">
+              <span class="live-dot"></span>
+              OFERTA EXCLUSIVA DE LANÇAMENTO
+            </div>
+            <span class="section-tag"><i class="ri-fire-fill"></i> 30 ROYALTY FREE BEATS</span>
+          </div>
+
+          <h2 class="hero-headline-sub">PARE DE PERDER TEMPO PROCURANDO BEATS COMUNS.</h2>
+          <h1 class="hero-title">30 BEATS PROFISSIONAIS PRONTOS PARA VIRAR HIT.</h1>
+          
+          <p class="hero-description">
+            Produções pesadas, mixadas e masterizadas com qualidade de grande gravadora. Prontas para você gravar seus vocais, lançar no Spotify, YouTube e monetizar 100% dos seus direitos sem pagar royalties.
+          </p>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="ri-check-line"></i></div>
+              <span>Download Imediato em WAV</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="ri-check-line"></i></div>
+              <span>100% Royalty Free</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="ri-check-line"></i></div>
+              <span>Mix & Master Profissional</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="ri-check-line"></i></div>
+              <span>Pronto para Spotify & Apple Music</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" target="_blank" rel="noopener noreferrer">
+              🔥 QUERO O FOX HIT KIT AGORA
+            </a>
+            <a href="#previa" class="btn-secondary">
+              <i class="ri-play-circle-fill" style="color: var(--purple-neon); font-size: 1.3rem;"></i> ▶ OUÇIR A PRÉVIA
+            </a>
+          </div>
+        </div>
+
+        <!-- Right 3D Box Visual -->
+        <div class="hero-visual-wrap">
+          <div class="box-glow-backdrop"></div>
+          <a href="https://pay.kiwify.com.br/KqkKRRb" class="product-box-card" target="_blank" rel="noopener noreferrer" title="Clique para adquirir o FOX HIT KIT no checkout seguro">
+            <div class="box-image-wrapper">
+              <img src="assets/fox-hit-kit-box.jpg" alt="FOX HIT KIT BEATS VOL.1 Product Box Artwork" width="480" height="640">
+              <div class="box-badge-overlay">
+                <span class="box-badge-text"><i class="ri-shield-flash-line"></i> KIT DIGITAL EXCLUSIVO</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INFINITE ARTIST MARQUEE TICKER WITH SPOTIFY SEARCH LINKS -->
+  <div class="marquee-section">
+    <div class="marquee-mask"></div>
+    <div class="marquee-mask marquee-mask-right"></div>
+    <div class="marquee-track" id="marquee-track">
+      <div class="marquee-item"><span>🔥 30 ROYALTY FREE BEATS</span><span class="marquee-dot">•</span></div>
+      <a href="https://open.spotify.com/search/MC%20HARIEL" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar MC HARIEL no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> MC HARIEL</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/TRAVIS%20SCOTT" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar TRAVIS SCOTT no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> TRAVIS SCOTT</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/FUTURE" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar FUTURE no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> FUTURE</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/YEAT" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar YEAT no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> YEAT</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/CENTRAL%20CEE" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar CENTRAL CEE no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> CENTRAL CEE</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/PLAYBOI%20CARTI" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar PLAYBOI CARTI no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> PLAYBOI CARTI</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/DRAKE" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar DRAKE no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> DRAKE</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/21%20SAVAGE" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar 21 SAVAGE no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> 21 SAVAGE</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/MC%20RYAN%20SP" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar MC RYAN SP no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> RYAN SP</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/GUNNA" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar GUNNA no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> GUNNA</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/LIL%20BABY" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar LIL BABY no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> LIL BABY</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/METRO%20BOOMIN" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar METRO BOOMIN no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> METRO BOOMIN</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/MC%20RICK" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar MC RICK no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> MC RICK</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/MC%20CEBEZINHO" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar MC CEBEZINHO no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> CEBEZINHO</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/MC%20MARKS" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar MC MARKS no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> MARKS</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/MC%20TUTO" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar MC TUTO no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> TUTO</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/MC%20KADU" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar MC KADU no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> KADU</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/PH%20DO%20MPC" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar PH DO MPC no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> PH DO MPC</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/VEIGH" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar VEIGH no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> VEIGH</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/LIL%20UZI%20VERT" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar LIL UZI VERT no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> LIL UZI VERT</span><span class="marquee-dot">•</span></a>
+      <a href="https://open.spotify.com/search/WS%20DA%20IGREJINHA" target="_blank" rel="noopener noreferrer" class="marquee-item" title="Pesquisar WS DA IGREJINHA no Spotify"><span><i class="ri-spotify-fill" style="color: #1DB954;"></i> WS DA IGREJINHA</span><span class="marquee-dot">•</span></a>
+    </div>
+  </div>
+
+  <!-- SOUNDCLOUD WAVEFORM AUDIO PREVIEW PLAYER SECTION -->
+  <section id="previa">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-sound-module-fill"></i> SINTETIZADOR DYN-SPECTRUM</span>
+        <h2 class="section-title">OUÇA A PRÉVIA DOS BEATS</h2>
+        <p class="section-subtitle mx-auto">Experimente o player interativo estilo SoundCloud com visualização em tempo real das ondas sonoras e loop automático de 30 segundos.</p>
+      </div>
+
+      <div class="audio-preview-container">
+        <div class="audio-header">
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: #FFF;">FOX HIT PLAYER • PREVIEW BEATS</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Selecione uma das 5 faixas em destaque para escutar o beat</p>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; padding: 6px 14px; background: rgba(180, 85, 255, 0.2); border: 1px solid var(--purple-neon); border-radius: 99px; color: var(--purple-neon);">
+            30 SECONDS LOOP MODE
+          </span>
+        </div>
+
+        <!-- Main Player Display Card -->
+        <div class="player-main-card">
+          <div class="active-track-info">
+            <div class="track-meta">
+              <div class="track-cover-art" id="active-track-icon">🔥</div>
+              <div>
+                <h4 class="track-details-title" id="active-track-name">MOTOR POTENTE</h4>
+                <div class="track-details-sub" id="active-track-sub">FUNK SP • 116 BPM • G min • Mc Hariel x Ig Style</div>
+              </div>
+            </div>
+            <div class="player-time-display" id="player-time-display">00:00:00 / 00:30:00</div>
+          </div>
+
+          <!-- Animated SoundCloud Waveform Canvas -->
+          <div class="waveform-canvas-container" title="Clique para navegar no tempo do beat">
+            <canvas id="waveform-canvas"></canvas>
+          </div>
+
+          <div class="player-controls-row">
+            <button class="player-btn-main" id="player-play-btn" aria-label="Tocar ou Pausar Beat">
+              <i class="ri-play-fill" id="play-btn-icon"></i>
+            </button>
+
+            <div class="player-volume-wrap">
+              <i class="ri-volume-up-fill" style="color: var(--purple-neon); font-size: 1.2rem;"></i>
+              <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.05" value="0.8">
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 Track Selectors -->
+        <div class="track-selector-grid">
+          <div class="track-select-card active" data-track="0">
+            <div class="mini-play-icon"><i class="ri-play-line"></i></div>
+            <div class="track-select-info">
+              <h4>1. ALUCINANTE</h4>
+              <p>Funk SP • 121 BPM</p>
+            </div>
+          </div>
+
+          <div class="track-select-card" data-track="1">
+            <div class="mini-play-icon"><i class="ri-play-line"></i></div>
+            <div class="track-select-info">
+              <h4>2. MOTOR POTENTE</h4>
+              <p>Funk SP • 116 BPM</p>
+            </div>
+          </div>
+
+          <div class="track-select-card" data-track="2">
+            <div class="mini-play-icon"><i class="ri-play-line"></i></div>
+            <div class="track-select-info">
+              <h4>3. EGÍTO</h4>
+              <p>Funk BH • 130 BPM</p>
+            </div>
+          </div>
+
+          <div class="track-select-card" data-track="3">
+            <div class="mini-play-icon"><i class="ri-play-line"></i></div>
+            <div class="track-select-info">
+              <h4>4. MICHIGAN</h4>
+              <p>Drill • 142 BPM</p>
+            </div>
+          </div>
+
+          <div class="track-select-card" data-track="4">
+            <div class="mini-play-icon"><i class="ri-play-line"></i></div>
+            <div class="track-select-info">
+              <h4>5. ATABACADA SINISTRA</h4>
+              <p>Funk BH • 130 BPM</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST & BENEFITS SECTION -->
+  <section id="beneficios">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-award-fill"></i> PADRÃO INDÚSTRIA</span>
+        <h2 class="section-title">POR QUE O FOX HIT KIT É DIFERENTE?</h2>
+        <p class="section-subtitle mx-auto">Desenvolvido com o máximo rigor técnico de estúdio para proporcionar o som encorpado que as grandes gravadoras exigem.</p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card tilt-card">
+          <div class="trust-icon"><i class="ri-download-cloud-2-fill"></i></div>
+          <h3 class="trust-card-title">Download Imediato</h3>
+          <p class="trust-card-desc">Após a confirmação da compra, você recebe o link direto de download no seu e-mail em menos de 1 minuto.</p>
+        </div>
+
+        <div class="trust-card tilt-card">
+          <div class="trust-icon"><i class="ri-copyright-fill"></i></div>
+          <h3 class="trust-card-title">100% Royalty Free</h3>
+          <p class="trust-card-desc">Fique com 100% dos seus lucros nas plataformas de streaming sem ter que repassar centavo para produtores.</p>
+        </div>
+
+        <div class="trust-card tilt-card">
+          <div class="trust-icon"><i class="ri-equalizer-fill"></i></div>
+          <h3 class="trust-card-title">Mix &amp; Master de Estúdio</h3>
+          <p class="trust-card-desc">Graves 808 profundos, médios nítidos e agudos cristalinos perfeitamente balanceados para qualquer caixa de som.</p>
+        </div>
+
+        <div class="trust-card tilt-card">
+          <div class="trust-icon"><i class="ri-disc-fill"></i></div>
+          <h3 class="trust-card-title">Arquivos WAV 24-Bit</h3>
+          <p class="trust-card-desc">Áudio em altíssima fidelidade (WAV sem compressão) pronto para sessão de gravação de voz.</p>
+        </div>
+      </div>
+
+      <!-- DAW Compatibility Banner -->
+      <div class="daw-banner">
+        <div class="daw-title"><i class="ri-cpu-line"></i> COMPATÍVEL COM TODAS AS DAWS E PROGRAMAS DE MÚSICA</div>
+        <div class="daw-badges">
+          <span class="daw-chip"><i class="ri-checkbox-circle-line"></i> FL Studio</span>
+          <span class="daw-chip"><i class="ri-checkbox-circle-line"></i> Ableton Live</span>
+          <span class="daw-chip"><i class="ri-checkbox-circle-line"></i> Logic Pro</span>
+          <span class="daw-chip"><i class="ri-checkbox-circle-line"></i> Cubase</span>
+          <span class="daw-chip"><i class="ri-checkbox-circle-line"></i> Studio One</span>
+          <span class="daw-chip"><i class="ri-checkbox-circle-line"></i> Reaper</span>
+          <span class="daw-chip"><i class="ri-checkbox-circle-line"></i> BandLab</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIDE THE KIT (30 BEATS CATALOG) -->
+  <section id="conteudo">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-folder-music-fill"></i> CATÁLOGO COMPLETO</span>
+        <h2 class="section-title">INSIDE THE KIT</h2>
+        <p class="section-subtitle mx-auto">Confira todas as 30 faixas exclusivas incluídas no FOX HIT KIT Beats Vol. 1. Navegue pelos estilos:</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="catalog-filters">
+        <button class="filter-btn active" data-filter="ALL">TODOS OS 30 BEATS</button>
+        <button class="filter-btn" data-filter="Funk SP">FUNK SP</button>
+        <button class="filter-btn" data-filter="Funk BH">FUNK BH</button>
+        <button class="filter-btn" data-filter="Trap">TRAP</button>
+        <button class="filter-btn" data-filter="Boom Bap">BOOM BAP</button>
+        <button class="filter-btn" data-filter="Drill">DRILL</button>
+        <button class="filter-btn" data-filter="Detroit">DETROIT</button>
+        <button class="filter-btn" data-filter="Conscious Rap">RAP CONSCIENTE</button>
+      </div>
+
+      <!-- Beats Cards Grid -->
+      <div class="beats-grid" id="beats-grid-container">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE / PAIN VS SOLUTION -->
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-shield-cross-fill"></i> A DECISÃO CERTA</span>
+        <h2 class="section-title">QUANTO TEMPO VOCÊ JÁ PERDEU...</h2>
+        <p class="section-subtitle mx-auto">Compare o mercado tradicional de instrumental com a proposta do FOX HIT KIT.</p>
+      </div>
+
+      <div class="pain-solution-grid">
+        <!-- Pain Card -->
+        <div class="pain-card">
+          <h3 class="card-status-title"><i class="ri-close-circle-fill"></i> PROCURANDO BEATS NA INTERNET</h3>
+          <ul class="list-check-items">
+            <li><span class="cross-icon"><i class="ri-close-line"></i></span> Perde horas ouvindo produções genéricas e fracas.</li>
+            <li><span class="cross-icon"><i class="ri-close-line"></i></span> Beats sem punch de grave 808 nem mixagem limpa.</li>
+            <li><span class="cross-icon"><i class="ri-close-line"></i></span> Paga R$ 150 a R$ 500 por apenas 1 licença básica.</li>
+            <li><span class="cross-icon"><i class="ri-close-line"></i></span> Corre o risco de tomar strike de copyright no YouTube.</li>
+            <li><span class="cross-icon"><i class="ri-close-line"></i></span> Não consegue lançar nos streamings sem pagar royalties extras.</li>
+          </ul>
+        </div>
+
+        <!-- Solution Card -->
+        <div class="solution-card">
+          <h3 class="card-status-title"><i class="ri-checkbox-circle-fill"></i> COM O FOX HIT KIT</h3>
+          <ul class="list-check-items">
+            <li><span class="check-icon"><i class="ri-check-line"></i></span> Acesso imediato a 30 produções de alto nível.</li>
+            <li><span class="check-icon"><i class="ri-check-line"></i></span> Sonoridade pesada de estúdio pronto para gravar voz.</li>
+            <li><span class="check-icon"><i class="ri-check-line"></i></span> Valor simbólico por todo o kit (menos de R$ 1,60 por beat).</li>
+            <li><span class="check-icon"><i class="ri-check-line"></i></span> 100% Royalty Free, sem strikes nem burocracia.</li>
+            <li><span class="check-icon"><i class="ri-check-line"></i></span> Monetize no Spotify, Deezer, Apple Music e YouTube.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUS SECTION -->
+  <section id="bonuses">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-gift-fill"></i> BÔNUS EXCLUSIVOS</span>
+        <h2 class="section-title">O QUE MAIS VOCÊ RECEBE HOJE</h2>
+        <p class="section-subtitle mx-auto">Adquirindo o FOX HIT KIT nesta oferta promocional, você garante estes 4 bônus sem custo adicional:</p>
+      </div>
+
+      <div class="bonus-grid">
+        <div class="bonus-card tilt-card">
+          <span class="bonus-tag">BÔNUS 01</span>
+          <div class="bonus-icon"><i class="ri-shield-user-fill"></i></div>
+          <h3 class="bonus-title">Licença Comercial Inclusa</h3>
+          <p class="bonus-desc">Direito total para uso comercial em shows, videoclipes, rádio e serviços de streaming sem limite de reproduções.</p>
+        </div>
+
+        <div class="bonus-card tilt-card">
+          <span class="bonus-tag">BÔNUS 02</span>
+          <div class="bonus-icon"><i class="ri-loop-left-fill"></i></div>
+          <h3 class="bonus-title">Atualizações Vitalícias</h3>
+          <p class="bonus-desc">Acesso garantido para sempre. Todas as novas atualizações e faixas adicionais da coleção no seu e-mail.</p>
+        </div>
+
+        <div class="bonus-card tilt-card">
+          <span class="bonus-tag">BÔNUS 03</span>
+          <div class="bonus-icon"><i class="ri-pulse-fill"></i></div>
+          <h3 class="bonus-title">Arquivos WAV 24-Bit High Quality</h3>
+          <p class="bonus-desc">Masterizações cristalinas prontas para inserção direta no seu software de gravação favorito.</p>
+        </div>
+
+        <div class="bonus-card tilt-card">
+          <span class="bonus-tag">BÔNUS 04</span>
+          <div class="bonus-icon"><i class="ri-speed-fill"></i></div>
+          <h3 class="bonus-title">Acesso Instantâneo</h3>
+          <p class="bonus-desc">Sistema de entrega automatizado. Pagou, recebeu o link de download direto no e-mail na mesma hora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE SECTION -->
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-scales-3-fill"></i> COMPARATIVO DIRETO</span>
+        <h2 class="section-title">POR QUE COMPRAR O FOX HIT KIT?</h2>
+        <p class="section-subtitle mx-auto">Vejam como o FOX HIT KIT supera os packs genéricos do mercado:</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Recurso / Benefício</th>
+              <th>Outros Packs de Beats</th>
+              <th class="highlight-col">FOX HIT KIT BEATS VOL. 1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Qualidade de Produção</td>
+              <td>❌ Genérica e sem peso</td>
+              <td class="highlight-col">✅ Som pesado de grande gravadora</td>
+            </tr>
+            <tr>
+              <td>Mixagem e Masterização</td>
+              <td>❌ Baixa qualidade / embolado</td>
+              <td class="highlight-col">✅ Mix limpa com graves 808 profundos</td>
+            </tr>
+            <tr>
+              <td>Licenciamento</td>
+              <td>❌ Licenças limitadas / com royalties</td>
+              <td class="highlight-col">✅ 100% Royalty Free vitalício</td>
+            </tr>
+            <tr>
+              <td>Quantidade de Beats</td>
+              <td>❌ Apenas 5 a 10 faixas</td>
+              <td class="highlight-col">✅ 30 Beats Exclusivos Selecionados</td>
+            </tr>
+            <tr>
+              <td>Formatos de Áudio</td>
+              <td>❌ Apenas MP3 compactado</td>
+              <td class="highlight-col">✅ WAV 24-Bit de Estúdio Sem Perdas</td>
+            </tr>
+            <tr>
+              <td>Uso Comercial / Spotify</td>
+              <td>❌ Burocrático ou Proibido</td>
+              <td class="highlight-col">✅ Liberado para todas as plataformas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-chat-voice-fill"></i> PROVA SOCIAL</span>
+        <h2 class="section-title">QUEM JÁ USOU APROVOU</h2>
+        <p class="section-subtitle mx-auto">Veja o depoimento de quem já garantiu o kit e transformou suas produções musicais:</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card tilt-card">
+          <div class="rating-stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="testimonial-quote">"Esse pack mudou completamente minhas produções. Os graves do Funk BH e os beats de Trap soam absurdos em qualquer caixa."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MC</div>
+            <div>
+              <div class="author-name">MC Dudu SP</div>
+              <div class="author-role">Artista & Compositor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card tilt-card">
+          <div class="rating-stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="testimonial-quote">"Os beats soam como produções de grande gravadora. Já gravei 3 faixas na mesma semana do lançamento!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PR</div>
+            <div>
+              <div class="author-name">Producer Rafa K</div>
+              <div class="author-role">Produtor Musical</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card tilt-card">
+          <div class="rating-stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="testimonial-quote">"O melhor custo-benefício que já encontrei na internet. Ter 30 beats prontos sem pagar royalties é uma facilidade surreal."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">TR</div>
+            <div>
+              <div class="author-name">Trapper Yunk</div>
+              <div class="author-role">MC Independente</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="ri-questionnaire-fill"></i> DÚVIDAS FREQUENTES</span>
+        <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+        <p class="section-subtitle mx-auto">Tire suas dúvidas antes de adquirir o seu FOX HIT KIT:</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Posso monetizar minha música no Spotify, YouTube e Apple Music?</span>
+            <i class="ri-add-line faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Sim! O FOX HIT KIT é 100% Royalty Free. Você tem permissão total para gravar, publicar, monetizar e receber todos os royalties das suas músicas em qualquer plataforma de streaming ou canal de conteúdo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como vou receber os arquivos após a compra?</span>
+            <i class="ri-add-line faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Imediatamente após a confirmação do pagamento, você receberá um e-mail contendo o link exclusivo de download para baixar todos os 30 beats em formato WAV de alta fidelidade.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quais DAWs e programas de áudio são compatíveis?</span>
+            <i class="ri-add-line faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Como os arquivos são disponibilizados em WAV 24-Bit universal, eles funcionam perfeitamente no FL Studio, Ableton Live, Logic Pro, Cubase, Studio One, Reaper, BandLab, GarageBand ou até pelo celular.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Preciso pagar alguma mensalidade ou taxa futura?</span>
+            <i class="ri-add-line faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Não! Trata-se de um pagamento único. Você compra o kit uma vez e tem acesso vitalício a todas as 30 faixas sem cobranças recorrentes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Posso usar para projetos comerciais e videoclipes?</span>
+            <i class="ri-add-line faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Com certeza! A licença comercial inclusa autoriza o uso em vídeos, shows, rádio e produções audiovisuais sem restrição de alcance.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCARCITY / TIMER SECTION -->
+  <section>
+    <div class="container">
+      <div class="scarcity-card">
+        <span class="section-tag"><i class="ri-alarm-warning-fill"></i> OFERTA POR TEMPO LIMITADO</span>
+        <h2 style="font-family: var(--font-heading); font-size: 2.2rem; margin-top: 10px;">O PREÇO PROMOCIONAL VAI SUBIR EM BREVE!</h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 10px auto 0 auto;">Aproveite a oportunidade única de adquirir as 30 produções pelo menor preço do ano.</p>
+
+        <div class="scarcity-price-tag">
+          <span class="old-price">R$ 297,00</span>
+          <span class="new-price">R$ 47,90</span>
+        </div>
+
+        <div class="timer-wrap">
+          <div class="timer-box">
+            <div class="timer-num" id="timer-hours">03</div>
+            <div class="timer-label">Horas</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="timer-mins">45</div>
+            <div class="timer-label">Minutos</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="timer-secs">20</div>
+            <div class="timer-label">Segundos</div>
+          </div>
+        </div>
+
+        <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          🔥 GARANTIR MEU FOX HIT KIT POR R$ 47,90
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEAT EXCLUSIVO SECTION -->
+  <section id="beat-exclusivo">
+    <div class="container">
+      <div class="exclusive-beat-card">
+        <div class="exclusive-beat-left">
+          <span class="section-tag"><i class="ri-mic-2-fill"></i> PARA ARTISTAS</span>
+          <h2 style="font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 900; margin: 16px 0 12px; line-height: 1.1;">
+            QUER UM BEAT <span style="color: var(--purple-neon);">EXCLUSIVO</span> SÓ SEU?
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; max-width: 520px;">
+            Além do kit pronto, também produzo <strong style="color: #fff;">beats exclusivos personalizados</strong> para artistas que querem uma produção única, feita especialmente para o seu estilo e identidade sonora.
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 10px;">
+            Entre em contato, me conta seu estilo e eu crio o beat ideal para o seu próximo hit.
+          </p>
+        </div>
+        <div class="exclusive-beat-right">
+          <a href="https://wa.me/5533999829360?text=Oi!%20Vi%20o%20site%20e%20quero%20um%20beat%20exclusivo!" class="btn-whatsapp-exclusive" target="_blank" rel="noopener noreferrer">
+            <i class="ri-whatsapp-fill"></i>
+            FALAR NO WHATSAPP
+          </a>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 10px; text-align: center;">
+            <i class="ri-phone-fill" style="color: var(--purple-neon);"></i> (33) 99982-9360
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section>
+    <div class="container">
+      <div class="final-cta-box">
+        <span class="section-tag"><i class="ri-rocket-fill"></i> BORA CRIAR O SEU HIT</span>
+        <h2 style="font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; margin-bottom: 20px; line-height: 1.1;">
+          O PRÓXIMO HIT PODE COMEÇAR COM UM CLIQUE.
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 650px; margin: 0 auto 36px auto;">
+          Baixe o FOX HIT KIT hoje e comece a gravar seus vocais com beats de nível internacional. Acesso imediato no e-mail logo após a confirmação.
+        </p>
+
+        <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" style="font-size: 1.25rem; padding: 22px 48px;" target="_blank" rel="noopener noreferrer">
+          🔥 BAIXAR O FOX HIT KIT AGORA
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="brand-logo">
+          <div class="brand-icon"><i class="ri-pulse-fill"></i></div>
+          <span class="brand-text">FOX HIT KIT</span>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="#previa">Prévia</a></li>
+          <li><a href="#conteudo">Catálogo</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#beat-exclusivo">Beat Exclusivo</a></li>
+          <li><a href="https://pay.kiwify.com.br/KqkKRRb" target="_blank" rel="noopener noreferrer">Comprar Kit</a></li>
+        </ul>
+
+        <div class="footer-social">
+          <a href="https://wa.me/5533999829360" class="footer-social-btn footer-whatsapp" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+            <i class="ri-whatsapp-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/djrapozao_ofc_/" class="footer-social-btn footer-instagram" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <i class="ri-instagram-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; margin-top: 24px;">
+        <p style="font-size: 0.85rem; color: #64748B;">
+          © 2026 FOX HIT KIT - Todos os direitos reservados. Contato: (33) 99982-9360 · Este produto não possui vínculo com nenhuma marca ou gravadora citada como referência de estilo.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript Engine -->
+  <script src="app.js"></script>
+</body>
+</html>
