@@ -176,7 +176,7 @@ const PREVIEW_TRACKS = [
   },
   {
     id: 'track-3',
-    name: 'EGÍTO',
+    name: 'EGITO',
     genre: 'FUNK BH',
     artist: 'Ws Da Igrejinha Style',
     bpm: 130,
@@ -462,7 +462,7 @@ function initAudioEngine() {
         const startPlay = () => {
           try {
             realAudioElement.currentTime = startSec + currentTime;
-          } catch (e) {}
+          } catch (e) { }
           realAudioElement.play().then(() => {
             usingRealAudio = true;
             clearInterval(playbackTimer);
