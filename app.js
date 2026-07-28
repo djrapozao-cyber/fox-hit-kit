@@ -350,6 +350,8 @@ function initAudioEngine() {
     });
   });
 
+  selectTrack(0);
+
   function selectTrack(index) {
     currentTrackIndex = index;
     const track = PREVIEW_TRACKS[index];
