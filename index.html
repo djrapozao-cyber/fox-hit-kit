@@ -11,6 +11,25 @@
   <!-- Remix Icons CSS -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '989390160809646');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=989390160809646&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
   <script>
@@ -37,9 +56,7 @@
   <header class="header-nav">
     <div class="nav-container">
       <a href="#" class="brand-logo">
-        <img src="assets/fox-logo.png"
-          onerror="this.onerror=null; if(!this.src.includes('FOX')) this.src='/FOX%20HIT%20KI%20SITE/'+this.getAttribute('src');"
-          alt="FOX HIT KIT Logo" class="brand-fox-logo">
+        <img src="assets/fox-logo.jpg" alt="FOX HIT KIT Logo" class="brand-fox-logo">
         <span class="brand-text">FOX HIT KIT</span>
       </a>
 
@@ -63,8 +80,8 @@
         </a>
       </div>
 
-      <a href="https://pay.kiwify.com.br/KqkKRRb" class="nav-cta" target="_blank" rel="noopener noreferrer">
-        🔥 QUERO MEU KIT NOW
+      <a href="https://pay.kiwify.com.br/KqkKRRb" class="nav-cta" target="_blank" rel="noopener noreferrer" onclick="if(window.fbq) fbq('track', 'InitiateCheckout');">
+        🔥 QUERO MEU KIT AGORA
       </a>
     </div>
   </header>
@@ -112,7 +129,7 @@
           </div>
 
           <div class="hero-actions">
-            <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" target="_blank" rel="noopener noreferrer" onclick="if(window.fbq) fbq('track', 'InitiateCheckout');">
               🔥 QUERO O FOX HIT KIT AGORA
             </a>
             <a href="#previa" class="btn-secondary">
@@ -710,7 +727,7 @@
           </div>
         </div>
 
-        <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" target="_blank" rel="noopener noreferrer">
+        <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" target="_blank" rel="noopener noreferrer" onclick="if(window.fbq) fbq('track', 'InitiateCheckout');">
           🔥 GARANTIR MEU FOX HIT KIT POR R$ 47,90
         </a>
       </div>
@@ -764,7 +781,7 @@
         </p>
 
         <a href="https://pay.kiwify.com.br/KqkKRRb" class="btn-primary" style="font-size: 1.25rem; padding: 22px 48px;"
-          target="_blank" rel="noopener noreferrer">
+          target="_blank" rel="noopener noreferrer" onclick="if(window.fbq) fbq('track', 'InitiateCheckout');">
           🔥 BAIXAR O FOX HIT KIT AGORA
         </a>
       </div>
